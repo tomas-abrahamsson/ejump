@@ -14,7 +14,7 @@
 ;;
 ;;   (add-hook 'erlang-mode-hook 'my-set-xref-backend)
 ;;   (defun my-set-xref-backend ()
-;;     (setq xref-backend-functions '(#'ejump-xref-activate)))
+;;     (setq xref-backend-functions '(ejump-xref-activate)))
 ;;
 ;; Now pressing M-. on an identifier should open a buffer at the place
 ;; where it is defined, or a list of candidates if uncertain. This
