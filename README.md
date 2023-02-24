@@ -20,7 +20,7 @@ How to install and use it:
 ```el
          (add-hook 'erlang-mode-hook 'my-set-xref-backend)
          (defun my-set-xref-backend ()
-           (setq xref-backend-functions '(#'ejump-xref-activate)))
+           (setq xref-backend-functions (list #'ejump-xref-activate)))
 ```
 3. In a `.erl` file, move the cursor to a function call or a `?MACRO`
    use and type `M-.` to jump to the definition. On a function
